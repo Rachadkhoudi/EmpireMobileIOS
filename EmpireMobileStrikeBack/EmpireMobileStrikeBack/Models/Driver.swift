@@ -23,20 +23,20 @@ class Driver {
     let rating: Int
     
     init(json: JSON) {
-        self.id = json["id"].intValue
-        self.nameDriver = json["pilot"]["name"].stringValue
-        self.destinationStart = json["pick_up"]["name"].stringValue
-        self.destinationEnd = json["drop_off"]["name"].stringValue
-        self.rating = json["pilot"]["rating"].intValue
-        self.timeStart = ""
-        self.timeEnd = ""
-        self.destinationTripDuration = ""
-        self.destinationDistance = ""
-        self.timeStart = convertDateFormatter(date: json["pick_up"]["date"].stringValue)
-        self.timeEnd = convertDateFormatter(date: json["drop_off"]["date"].stringValue)
-        self.destinationDistance = String(getComa(number: json["distance"]["value"].intValue))   + " " + json["distance"]["unit"].stringValue
-        self.destinationTripDuration = self.stringFromTimeInterval(interval: json["duration"].doubleValue / 1000) as String
-        self.imageDriver.image = getImage(name: self.nameDriver)
+        id = json["id"].intValue
+        nameDriver = json["pilot"]["name"].stringValue
+        destinationStart = json["pick_up"]["name"].stringValue
+        destinationEnd = json["drop_off"]["name"].stringValue
+        rating = json["pilot"]["rating"].intValue
+        timeStart = ""
+        timeEnd = ""
+        destinationTripDuration = ""
+        destinationDistance = ""
+        timeStart = convertDateFormatter(date: json["pick_up"]["date"].stringValue)
+        timeEnd = convertDateFormatter(date: json["drop_off"]["date"].stringValue)
+        destinationDistance = String(getComa(number: json["distance"]["value"].intValue))   + " " + json["distance"]["unit"].stringValue
+        destinationTripDuration = stringFromTimeInterval(interval: json["duration"].doubleValue / 1000) as String
+        imageDriver.image = getImage(name: nameDriver)
     }
     
     func getComa(number: Int) -> String {
@@ -48,14 +48,12 @@ class Driver {
     func getImage(name:String) -> UIImage {
         if let image = UIImage(named: name){
             return image
-        }
-        else
-        {
+        }else{
            return  #imageLiteral(resourceName: "noUser")
         }
     }
     
-    func stringFromTimeInterval(interval: TimeInterval) -> String {
+    private func stringFromTimeInterval(interval: TimeInterval) -> String {
         
         let ti = NSInteger(interval)
         let seconds = ti % 60
@@ -69,10 +67,10 @@ class Driver {
     {
         let dateFormatter = DateFormatter()
 
-        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm.ssZ"//this your string date format
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm.ssZ"
         dateFormatter.timeZone = NSTimeZone(name: "UTC") as TimeZone!
         let date = dateFormatter.date(from: date)
-        dateFormatter.dateFormat = "yyyy MMM EEEE HH:mm"///this is what you want to convert format
+        dateFormatter.dateFormat = "yyyy MMM EEEE HH:mm"
         dateFormatter.timeZone = NSTimeZone(name: "UTC") as TimeZone!
         _ = dateFormatter.string(from: date!)
         let hour = String(Calendar.current.component(.hour, from: date!))

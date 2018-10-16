@@ -15,15 +15,12 @@ class TripTableViewCell: UITableViewCell {
     @IBOutlet var destinationStart: UILabel!
     @IBOutlet var destinationEnd: UILabel!
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
+    
     func fillCell(driver: Driver) -> Void {
-        self.imageDriver.image = driver.imageDriver.image
-        self.nameDriver.text = driver.nameDriver
-        self.destinationStart.text = driver.destinationStart
-        self.destinationEnd.text = driver.destinationEnd
+        imageDriver.image = driver.imageDriver.image
+        nameDriver.text = driver.nameDriver
+        destinationStart.text = driver.destinationStart
+        destinationEnd.text = driver.destinationEnd
+        self.selectionStyle = .none
     }
 }

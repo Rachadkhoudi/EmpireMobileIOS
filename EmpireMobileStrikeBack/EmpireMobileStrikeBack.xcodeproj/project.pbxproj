@@ -19,11 +19,19 @@
 		8565A21E2174B2B000D24745 /* DetailPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8565A21D2174B2B000D24745 /* DetailPageViewController.swift */; };
 		8565A2202174B44800D24745 /* network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8565A21F2174B44800D24745 /* network.swift */; };
 		8565A2222174B82400D24745 /* Driver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8565A2212174B82400D24745 /* Driver.swift */; };
+		8565A22B217669E100D24745 /* EmpireMobileStrikeBackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8565A22A217669E100D24745 /* EmpireMobileStrikeBackTests.swift */; };
 		B999E4B15033A745D594BB68 /* Pods_EmpireMobileStrikeBackUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 948BE6CD09A8DDE250CFC9C5 /* Pods_EmpireMobileStrikeBackUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		8565A20321749B1B00D24745 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8565A1E621749B1B00D24745 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8565A1ED21749B1B00D24745;
+			remoteInfo = EmpireMobileStrikeBack;
+		};
+		8565A22D217669E100D24745 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8565A1E621749B1B00D24745 /* Project object */;
 			proxyType = 1;
@@ -52,6 +60,9 @@
 		8565A21D2174B2B000D24745 /* DetailPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPageViewController.swift; sourceTree = "<group>"; };
 		8565A21F2174B44800D24745 /* network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = network.swift; sourceTree = "<group>"; };
 		8565A2212174B82400D24745 /* Driver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Driver.swift; sourceTree = "<group>"; };
+		8565A228217669E100D24745 /* EmpireMobileStrikeBackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmpireMobileStrikeBackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8565A22A217669E100D24745 /* EmpireMobileStrikeBackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmpireMobileStrikeBackTests.swift; sourceTree = "<group>"; };
+		8565A22C217669E100D24745 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		948BE6CD09A8DDE250CFC9C5 /* Pods_EmpireMobileStrikeBackUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EmpireMobileStrikeBackUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2BFD71EF0580ABADBB78B2E /* Pods-EmpireMobileStrikeBack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmpireMobileStrikeBack.release.xcconfig"; path = "Pods/Target Support Files/Pods-EmpireMobileStrikeBack/Pods-EmpireMobileStrikeBack.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,6 +84,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8565A225217669E100D24745 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -90,6 +108,7 @@
 			children = (
 				8565A1F021749B1B00D24745 /* EmpireMobileStrikeBack */,
 				8565A20521749B1B00D24745 /* EmpireMobileStrikeBackUITests */,
+				8565A229217669E100D24745 /* EmpireMobileStrikeBackTests */,
 				8565A1EF21749B1B00D24745 /* Products */,
 				8CF3D6986864D464EF4636F9 /* Pods */,
 				06E52BC5F5E8CF5267E3CAB7 /* Frameworks */,
@@ -101,6 +120,7 @@
 			children = (
 				8565A1EE21749B1B00D24745 /* EmpireMobileStrikeBack.app */,
 				8565A20221749B1B00D24745 /* EmpireMobileStrikeBackUITests.xctest */,
+				8565A228217669E100D24745 /* EmpireMobileStrikeBackTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -164,6 +184,15 @@
 			path = Misc;
 			sourceTree = "<group>";
 		};
+		8565A229217669E100D24745 /* EmpireMobileStrikeBackTests */ = {
+			isa = PBXGroup;
+			children = (
+				8565A22A217669E100D24745 /* EmpireMobileStrikeBackTests.swift */,
+				8565A22C217669E100D24745 /* Info.plist */,
+			);
+			path = EmpireMobileStrikeBackTests;
+			sourceTree = "<group>";
+		};
 		8CF3D6986864D464EF4636F9 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -219,6 +248,24 @@
 			productReference = 8565A20221749B1B00D24745 /* EmpireMobileStrikeBackUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		8565A227217669E100D24745 /* EmpireMobileStrikeBackTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8565A22F217669E100D24745 /* Build configuration list for PBXNativeTarget "EmpireMobileStrikeBackTests" */;
+			buildPhases = (
+				8565A224217669E100D24745 /* Sources */,
+				8565A225217669E100D24745 /* Frameworks */,
+				8565A226217669E100D24745 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8565A22E217669E100D24745 /* PBXTargetDependency */,
+			);
+			name = EmpireMobileStrikeBackTests;
+			productName = EmpireMobileStrikeBackTests;
+			productReference = 8565A228217669E100D24745 /* EmpireMobileStrikeBackTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -234,6 +281,11 @@
 						ProvisioningStyle = Automatic;
 					};
 					8565A20121749B1B00D24745 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8565A1ED21749B1B00D24745;
+					};
+					8565A227217669E100D24745 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 8565A1ED21749B1B00D24745;
@@ -255,6 +307,7 @@
 			targets = (
 				8565A1ED21749B1B00D24745 /* EmpireMobileStrikeBack */,
 				8565A20121749B1B00D24745 /* EmpireMobileStrikeBackUITests */,
+				8565A227217669E100D24745 /* EmpireMobileStrikeBackTests */,
 			);
 		};
 /* End PBXProject section */
@@ -272,6 +325,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		8565A20021749B1B00D24745 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8565A226217669E100D24745 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -395,6 +455,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8565A224217669E100D24745 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8565A22B217669E100D24745 /* EmpireMobileStrikeBackTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -402,6 +470,11 @@
 			isa = PBXTargetDependency;
 			target = 8565A1ED21749B1B00D24745 /* EmpireMobileStrikeBack */;
 			targetProxy = 8565A20321749B1B00D24745 /* PBXContainerItemProxy */;
+		};
+		8565A22E217669E100D24745 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8565A1ED21749B1B00D24745 /* EmpireMobileStrikeBack */;
+			targetProxy = 8565A22D217669E100D24745 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -598,6 +671,38 @@
 			};
 			name = Release;
 		};
+		8565A230217669E100D24745 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N5Y727PXTQ;
+				INFOPLIST_FILE = EmpireMobileStrikeBackTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = BadrCeMecCool.EmpireMobileStrikeBackTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EmpireMobileStrikeBack.app/EmpireMobileStrikeBack";
+			};
+			name = Debug;
+		};
+		8565A231217669E100D24745 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N5Y727PXTQ;
+				INFOPLIST_FILE = EmpireMobileStrikeBackTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = BadrCeMecCool.EmpireMobileStrikeBackTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EmpireMobileStrikeBack.app/EmpireMobileStrikeBack";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -624,6 +729,15 @@
 			buildConfigurations = (
 				8565A20F21749B1B00D24745 /* Debug */,
 				8565A21021749B1B00D24745 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8565A22F217669E100D24745 /* Build configuration list for PBXNativeTarget "EmpireMobileStrikeBackTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8565A230217669E100D24745 /* Debug */,
+				8565A231217669E100D24745 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

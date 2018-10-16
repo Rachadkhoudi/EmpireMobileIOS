@@ -14,6 +14,8 @@ class LastTripViewController: UIViewController, UITableViewDelegate, UITableView
     let network = Network()
     var arrayOfDrivers: [Driver] = []
     
+    // MARK: override function
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.navigationBar.isHidden = true
@@ -24,8 +26,10 @@ class LastTripViewController: UIViewController, UITableViewDelegate, UITableView
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         network.getListTrips()
-        
     }
+    
+    
+    // MARK: Datasource method
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return arrayOfDrivers.count
@@ -42,6 +46,7 @@ class LastTripViewController: UIViewController, UITableViewDelegate, UITableView
         return cell
     }
     
+    // MARK: Events function
     func notificationFinish(notification:Notification) -> Void {
         if (notification.name.rawValue == "ListTripLoadNotification")
         {
@@ -49,15 +54,14 @@ class LastTripViewController: UIViewController, UITableViewDelegate, UITableView
             tableView.reloadData()
         }else if (notification.name.rawValue == "ListTripFailledNotification")
         {
-            //Put error
+            //Display componante warning
         }else{
-            //Should Never happen
+            //Should Never happen "an unknown error occurred"
         }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if (segue.identifier == "goToDetailPage")
-        {
+        if (segue.identifier == "goToDetailPage"){
             let vc = segue.destination as! DetailPageViewController
             let pos = sender as! Int
             vc.driver = arrayOfDrivers[pos]

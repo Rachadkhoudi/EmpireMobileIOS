@@ -27,7 +27,6 @@ struct Network {
                     arrayOfDriver.append(Driver(json: elem.1))
                 }
                 NotificationCenter.default.post(name:NSNotification.Name("ListTripLoadNotification"), object: arrayOfDriver, userInfo: nil)
-
                 
             }else{
                 NotificationCenter.default.post(name:NSNotification.Name("ListTripFailledNotification"), object: nil, userInfo: nil)
