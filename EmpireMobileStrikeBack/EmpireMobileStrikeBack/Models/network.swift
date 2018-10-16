@@ -33,7 +33,4 @@ struct Network {
             }
         }
     }
-    
-
-    
 }

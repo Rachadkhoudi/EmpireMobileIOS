@@ -39,13 +39,13 @@ class Driver {
         imageDriver.image = getImage(name: nameDriver)
     }
     
-    func getComa(number: Int) -> String {
+    private func getComa(number: Int) -> String {
         let numberFormatter = NumberFormatter()
         numberFormatter.numberStyle = NumberFormatter.Style.decimal
         return numberFormatter.string(from: NSNumber(value:number))!
     }
     
-    func getImage(name:String) -> UIImage {
+    private func getImage(name:String) -> UIImage {
         if let image = UIImage(named: name){
             return image
         }else{
@@ -54,7 +54,6 @@ class Driver {
     }
     
     private func stringFromTimeInterval(interval: TimeInterval) -> String {
-        
         let ti = NSInteger(interval)
         let seconds = ti % 60
         let minutes = (ti / 60) % 60

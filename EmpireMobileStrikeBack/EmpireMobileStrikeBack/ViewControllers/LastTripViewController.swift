@@ -28,7 +28,6 @@ class LastTripViewController: UIViewController, UITableViewDelegate, UITableView
         network.getListTrips()
     }
     
-    
     // MARK: Datasource method
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -38,7 +37,6 @@ class LastTripViewController: UIViewController, UITableViewDelegate, UITableView
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         performSegue(withIdentifier: "goToDetailPage", sender: indexPath.row)
     }
-    
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = Bundle.main.loadNibNamed("TripTableViewCell", owner: self, options: nil)?.first as! TripTableViewCell

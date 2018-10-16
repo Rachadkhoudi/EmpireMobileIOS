@@ -69,5 +69,4 @@ class DetailPageViewController: UIViewController {
     @IBAction func btnback(_ sender: UIButton) {
         navigationController?.popViewController(animated: true)
     }
-    
 }
