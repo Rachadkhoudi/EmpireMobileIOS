@@ -1,0 +1,634 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		580413C3542024541869CAD4 /* Pods_EmpireMobileStrikeBack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 658942280A0EFE6E29DC6AA8 /* Pods_EmpireMobileStrikeBack.framework */; };
+		8565A1F221749B1B00D24745 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8565A1F121749B1B00D24745 /* AppDelegate.swift */; };
+		8565A1F721749B1B00D24745 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8565A1F521749B1B00D24745 /* Main.storyboard */; };
+		8565A1F921749B1B00D24745 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8565A1F821749B1B00D24745 /* Assets.xcassets */; };
+		8565A1FC21749B1B00D24745 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8565A1FA21749B1B00D24745 /* LaunchScreen.storyboard */; };
+		8565A20721749B1B00D24745 /* EmpireMobileStrikeBackUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8565A20621749B1B00D24745 /* EmpireMobileStrikeBackUITests.swift */; };
+		8565A21621749E6200D24745 /* LastTripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8565A21521749E6200D24745 /* LastTripViewController.swift */; };
+		8565A21B21749FBB00D24745 /* TripTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8565A21921749FBB00D24745 /* TripTableViewCell.swift */; };
+		8565A21C21749FBB00D24745 /* TripTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8565A21A21749FBB00D24745 /* TripTableViewCell.xib */; };
+		8565A21E2174B2B000D24745 /* DetailPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8565A21D2174B2B000D24745 /* DetailPageViewController.swift */; };
+		8565A2202174B44800D24745 /* network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8565A21F2174B44800D24745 /* network.swift */; };
+		8565A2222174B82400D24745 /* Driver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8565A2212174B82400D24745 /* Driver.swift */; };
+		B999E4B15033A745D594BB68 /* Pods_EmpireMobileStrikeBackUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 948BE6CD09A8DDE250CFC9C5 /* Pods_EmpireMobileStrikeBackUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8565A20321749B1B00D24745 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8565A1E621749B1B00D24745 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8565A1ED21749B1B00D24745;
+			remoteInfo = EmpireMobileStrikeBack;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06C58DD586B24146E52C4664 /* Pods-EmpireMobileStrikeBackUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmpireMobileStrikeBackUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EmpireMobileStrikeBackUITests/Pods-EmpireMobileStrikeBackUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1ECFC431BF7E41F315E4794C /* Pods-EmpireMobileStrikeBackUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmpireMobileStrikeBackUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EmpireMobileStrikeBackUITests/Pods-EmpireMobileStrikeBackUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5D57AB0E79089A7719AF6418 /* Pods-EmpireMobileStrikeBack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmpireMobileStrikeBack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EmpireMobileStrikeBack/Pods-EmpireMobileStrikeBack.debug.xcconfig"; sourceTree = "<group>"; };
+		658942280A0EFE6E29DC6AA8 /* Pods_EmpireMobileStrikeBack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EmpireMobileStrikeBack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8565A1EE21749B1B00D24745 /* EmpireMobileStrikeBack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmpireMobileStrikeBack.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8565A1F121749B1B00D24745 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8565A1F621749B1B00D24745 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8565A1F821749B1B00D24745 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8565A1FB21749B1B00D24745 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8565A1FD21749B1B00D24745 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8565A20221749B1B00D24745 /* EmpireMobileStrikeBackUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmpireMobileStrikeBackUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8565A20621749B1B00D24745 /* EmpireMobileStrikeBackUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmpireMobileStrikeBackUITests.swift; sourceTree = "<group>"; };
+		8565A20821749B1B00D24745 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8565A21521749E6200D24745 /* LastTripViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastTripViewController.swift; sourceTree = "<group>"; };
+		8565A21921749FBB00D24745 /* TripTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripTableViewCell.swift; sourceTree = "<group>"; };
+		8565A21A21749FBB00D24745 /* TripTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TripTableViewCell.xib; sourceTree = "<group>"; };
+		8565A21D2174B2B000D24745 /* DetailPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPageViewController.swift; sourceTree = "<group>"; };
+		8565A21F2174B44800D24745 /* network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = network.swift; sourceTree = "<group>"; };
+		8565A2212174B82400D24745 /* Driver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Driver.swift; sourceTree = "<group>"; };
+		948BE6CD09A8DDE250CFC9C5 /* Pods_EmpireMobileStrikeBackUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EmpireMobileStrikeBackUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2BFD71EF0580ABADBB78B2E /* Pods-EmpireMobileStrikeBack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmpireMobileStrikeBack.release.xcconfig"; path = "Pods/Target Support Files/Pods-EmpireMobileStrikeBack/Pods-EmpireMobileStrikeBack.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8565A1EB21749B1B00D24745 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				580413C3542024541869CAD4 /* Pods_EmpireMobileStrikeBack.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8565A1FF21749B1B00D24745 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B999E4B15033A745D594BB68 /* Pods_EmpireMobileStrikeBackUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06E52BC5F5E8CF5267E3CAB7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				658942280A0EFE6E29DC6AA8 /* Pods_EmpireMobileStrikeBack.framework */,
+				948BE6CD09A8DDE250CFC9C5 /* Pods_EmpireMobileStrikeBackUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8565A1E521749B1B00D24745 = {
+			isa = PBXGroup;
+			children = (
+				8565A1F021749B1B00D24745 /* EmpireMobileStrikeBack */,
+				8565A20521749B1B00D24745 /* EmpireMobileStrikeBackUITests */,
+				8565A1EF21749B1B00D24745 /* Products */,
+				8CF3D6986864D464EF4636F9 /* Pods */,
+				06E52BC5F5E8CF5267E3CAB7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8565A1EF21749B1B00D24745 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8565A1EE21749B1B00D24745 /* EmpireMobileStrikeBack.app */,
+				8565A20221749B1B00D24745 /* EmpireMobileStrikeBackUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8565A1F021749B1B00D24745 /* EmpireMobileStrikeBack */ = {
+			isa = PBXGroup;
+			children = (
+				8565A1FD21749B1B00D24745 /* Info.plist */,
+				8565A21421749E3900D24745 /* Misc */,
+				8565A21321749E0B00D24745 /* Models */,
+				8565A21221749DFA00D24745 /* ViewControllers */,
+				8565A21121749DF100D24745 /* Views */,
+			);
+			path = EmpireMobileStrikeBack;
+			sourceTree = "<group>";
+		};
+		8565A20521749B1B00D24745 /* EmpireMobileStrikeBackUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8565A20621749B1B00D24745 /* EmpireMobileStrikeBackUITests.swift */,
+				8565A20821749B1B00D24745 /* Info.plist */,
+			);
+			path = EmpireMobileStrikeBackUITests;
+			sourceTree = "<group>";
+		};
+		8565A21121749DF100D24745 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8565A1F821749B1B00D24745 /* Assets.xcassets */,
+				8565A1F521749B1B00D24745 /* Main.storyboard */,
+				8565A1FA21749B1B00D24745 /* LaunchScreen.storyboard */,
+				8565A21A21749FBB00D24745 /* TripTableViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8565A21221749DFA00D24745 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8565A21D2174B2B000D24745 /* DetailPageViewController.swift */,
+				8565A1F121749B1B00D24745 /* AppDelegate.swift */,
+				8565A21521749E6200D24745 /* LastTripViewController.swift */,
+				8565A21921749FBB00D24745 /* TripTableViewCell.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8565A21321749E0B00D24745 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8565A21F2174B44800D24745 /* network.swift */,
+				8565A2212174B82400D24745 /* Driver.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8565A21421749E3900D24745 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+		8CF3D6986864D464EF4636F9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5D57AB0E79089A7719AF6418 /* Pods-EmpireMobileStrikeBack.debug.xcconfig */,
+				C2BFD71EF0580ABADBB78B2E /* Pods-EmpireMobileStrikeBack.release.xcconfig */,
+				06C58DD586B24146E52C4664 /* Pods-EmpireMobileStrikeBackUITests.debug.xcconfig */,
+				1ECFC431BF7E41F315E4794C /* Pods-EmpireMobileStrikeBackUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8565A1ED21749B1B00D24745 /* EmpireMobileStrikeBack */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8565A20B21749B1B00D24745 /* Build configuration list for PBXNativeTarget "EmpireMobileStrikeBack" */;
+			buildPhases = (
+				5E2F2D26D5D4F250E249A5FB /* [CP] Check Pods Manifest.lock */,
+				8565A1EA21749B1B00D24745 /* Sources */,
+				8565A1EB21749B1B00D24745 /* Frameworks */,
+				8565A1EC21749B1B00D24745 /* Resources */,
+				E39DC1A895EE43A9722985DE /* [CP] Embed Pods Frameworks */,
+				BEFA03A107E3948259D2F51C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EmpireMobileStrikeBack;
+			productName = EmpireMobileStrikeBack;
+			productReference = 8565A1EE21749B1B00D24745 /* EmpireMobileStrikeBack.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8565A20121749B1B00D24745 /* EmpireMobileStrikeBackUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8565A20E21749B1B00D24745 /* Build configuration list for PBXNativeTarget "EmpireMobileStrikeBackUITests" */;
+			buildPhases = (
+				09B8B2FD278B591B1D21DDA4 /* [CP] Check Pods Manifest.lock */,
+				8565A1FE21749B1B00D24745 /* Sources */,
+				8565A1FF21749B1B00D24745 /* Frameworks */,
+				8565A20021749B1B00D24745 /* Resources */,
+				F9A47C654174BC805E11E53F /* [CP] Embed Pods Frameworks */,
+				8F4EA31167A4F5DFD443F51C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8565A20421749B1B00D24745 /* PBXTargetDependency */,
+			);
+			name = EmpireMobileStrikeBackUITests;
+			productName = EmpireMobileStrikeBackUITests;
+			productReference = 8565A20221749B1B00D24745 /* EmpireMobileStrikeBackUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8565A1E621749B1B00D24745 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Badr Choukri";
+				TargetAttributes = {
+					8565A1ED21749B1B00D24745 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					8565A20121749B1B00D24745 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8565A1ED21749B1B00D24745;
+					};
+				};
+			};
+			buildConfigurationList = 8565A1E921749B1B00D24745 /* Build configuration list for PBXProject "EmpireMobileStrikeBack" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8565A1E521749B1B00D24745;
+			productRefGroup = 8565A1EF21749B1B00D24745 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8565A1ED21749B1B00D24745 /* EmpireMobileStrikeBack */,
+				8565A20121749B1B00D24745 /* EmpireMobileStrikeBackUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8565A1EC21749B1B00D24745 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8565A21C21749FBB00D24745 /* TripTableViewCell.xib in Resources */,
+				8565A1FC21749B1B00D24745 /* LaunchScreen.storyboard in Resources */,
+				8565A1F921749B1B00D24745 /* Assets.xcassets in Resources */,
+				8565A1F721749B1B00D24745 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8565A20021749B1B00D24745 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		09B8B2FD278B591B1D21DDA4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5E2F2D26D5D4F250E249A5FB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8F4EA31167A4F5DFD443F51C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EmpireMobileStrikeBackUITests/Pods-EmpireMobileStrikeBackUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BEFA03A107E3948259D2F51C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EmpireMobileStrikeBack/Pods-EmpireMobileStrikeBack-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E39DC1A895EE43A9722985DE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EmpireMobileStrikeBack/Pods-EmpireMobileStrikeBack-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9A47C654174BC805E11E53F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EmpireMobileStrikeBackUITests/Pods-EmpireMobileStrikeBackUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8565A1EA21749B1B00D24745 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8565A21E2174B2B000D24745 /* DetailPageViewController.swift in Sources */,
+				8565A21B21749FBB00D24745 /* TripTableViewCell.swift in Sources */,
+				8565A2202174B44800D24745 /* network.swift in Sources */,
+				8565A2222174B82400D24745 /* Driver.swift in Sources */,
+				8565A1F221749B1B00D24745 /* AppDelegate.swift in Sources */,
+				8565A21621749E6200D24745 /* LastTripViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8565A1FE21749B1B00D24745 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8565A20721749B1B00D24745 /* EmpireMobileStrikeBackUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8565A20421749B1B00D24745 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8565A1ED21749B1B00D24745 /* EmpireMobileStrikeBack */;
+			targetProxy = 8565A20321749B1B00D24745 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8565A1F521749B1B00D24745 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8565A1F621749B1B00D24745 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8565A1FA21749B1B00D24745 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8565A1FB21749B1B00D24745 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8565A20921749B1B00D24745 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8565A20A21749B1B00D24745 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8565A20C21749B1B00D24745 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D57AB0E79089A7719AF6418 /* Pods-EmpireMobileStrikeBack.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N5Y727PXTQ;
+				INFOPLIST_FILE = EmpireMobileStrikeBack/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = BadrCeMecCool.EmpireMobileStrikeBack;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8565A20D21749B1B00D24745 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2BFD71EF0580ABADBB78B2E /* Pods-EmpireMobileStrikeBack.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N5Y727PXTQ;
+				INFOPLIST_FILE = EmpireMobileStrikeBack/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = BadrCeMecCool.EmpireMobileStrikeBack;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8565A20F21749B1B00D24745 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06C58DD586B24146E52C4664 /* Pods-EmpireMobileStrikeBackUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N5Y727PXTQ;
+				INFOPLIST_FILE = EmpireMobileStrikeBackUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = BadrCeMecCool.EmpireMobileStrikeBackUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EmpireMobileStrikeBack;
+			};
+			name = Debug;
+		};
+		8565A21021749B1B00D24745 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1ECFC431BF7E41F315E4794C /* Pods-EmpireMobileStrikeBackUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N5Y727PXTQ;
+				INFOPLIST_FILE = EmpireMobileStrikeBackUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = BadrCeMecCool.EmpireMobileStrikeBackUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EmpireMobileStrikeBack;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8565A1E921749B1B00D24745 /* Build configuration list for PBXProject "EmpireMobileStrikeBack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8565A20921749B1B00D24745 /* Debug */,
+				8565A20A21749B1B00D24745 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8565A20B21749B1B00D24745 /* Build configuration list for PBXNativeTarget "EmpireMobileStrikeBack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8565A20C21749B1B00D24745 /* Debug */,
+				8565A20D21749B1B00D24745 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8565A20E21749B1B00D24745 /* Build configuration list for PBXNativeTarget "EmpireMobileStrikeBackUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8565A20F21749B1B00D24745 /* Debug */,
+				8565A21021749B1B00D24745 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8565A1E621749B1B00D24745 /* Project object */;
+}

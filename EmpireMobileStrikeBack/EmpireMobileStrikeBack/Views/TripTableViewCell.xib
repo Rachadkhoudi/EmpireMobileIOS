@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="88" id="KGk-i7-Jjw" customClass="TripTableViewCell" customModule="EmpireMobileStrikeBack" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="88"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="87.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dark Vador" translatesAutoresizingMaskIntoConstraints="NO" id="uzc-G6-jko">
+                        <rect key="frame" x="16" y="16" width="56" height="56"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="56" id="Xb5-Cj-pQ9"/>
+                            <constraint firstAttribute="width" constant="56" id="yQC-DB-NUS"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dark vador" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uci-zm-Vlf">
+                        <rect key="frame" x="88" y="21" width="208" height="21"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yavin 4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="oRv-Xt-FEp">
+                        <rect key="frame" x="88" y="50" width="87.5" height="16"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                        <color key="textColor" red="0.50588235294117645" green="0.50588235294117645" blue="0.50588235294117645" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Naboo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="9Es-tb-DDw">
+                        <rect key="frame" x="216.5" y="50" width="79.5" height="16"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                        <color key="textColor" red="0.50588235290000005" green="0.50588235290000005" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow" translatesAutoresizingMaskIntoConstraints="NO" id="9R5-Jo-Mi3">
+                        <rect key="frame" x="183.5" y="50" width="17" height="10"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="17" id="7Dd-5k-TGb"/>
+                            <constraint firstAttribute="height" constant="10" id="QcK-4S-UqM"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="9Es-tb-DDw" secondAttribute="trailing" constant="8" id="1TS-2a-Pef"/>
+                    <constraint firstItem="9Es-tb-DDw" firstAttribute="leading" secondItem="9R5-Jo-Mi3" secondAttribute="trailing" constant="16" id="J3i-z1-gar"/>
+                    <constraint firstItem="9Es-tb-DDw" firstAttribute="top" secondItem="Uci-zm-Vlf" secondAttribute="bottom" constant="8" id="JC5-KB-sTO"/>
+                    <constraint firstItem="Uci-zm-Vlf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="21" id="Kua-5c-nKE"/>
+                    <constraint firstItem="uzc-G6-jko" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Mce-MU-W55"/>
+                    <constraint firstItem="9R5-Jo-Mi3" firstAttribute="leading" secondItem="oRv-Xt-FEp" secondAttribute="trailing" constant="8" id="StY-q5-YsU"/>
+                    <constraint firstItem="oRv-Xt-FEp" firstAttribute="top" secondItem="Uci-zm-Vlf" secondAttribute="bottom" constant="8" id="ZU8-DP-v8A"/>
+                    <constraint firstItem="9R5-Jo-Mi3" firstAttribute="top" secondItem="Uci-zm-Vlf" secondAttribute="bottom" constant="8" id="chH-mI-cJv"/>
+                    <constraint firstItem="9R5-Jo-Mi3" firstAttribute="centerX" secondItem="Uci-zm-Vlf" secondAttribute="centerX" id="dE8-Kh-B0f"/>
+                    <constraint firstItem="oRv-Xt-FEp" firstAttribute="leading" secondItem="Uci-zm-Vlf" secondAttribute="leading" id="j10-fH-GSA"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Uci-zm-Vlf" secondAttribute="trailing" constant="8" id="oUs-cp-RGg"/>
+                    <constraint firstItem="Uci-zm-Vlf" firstAttribute="leading" secondItem="uzc-G6-jko" secondAttribute="trailing" constant="16" id="w9R-da-8hd"/>
+                    <constraint firstItem="uzc-G6-jko" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="yv0-52-SVa"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="destinationEnd" destination="9Es-tb-DDw" id="UVn-FC-chm"/>
+                <outlet property="destinationStart" destination="oRv-Xt-FEp" id="dTO-Yn-rvd"/>
+                <outlet property="imageDriver" destination="uzc-G6-jko" id="O3p-ef-FNP"/>
+                <outlet property="nameDriver" destination="Uci-zm-Vlf" id="Pch-A2-mBt"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="76"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Dark Vador" width="56" height="56"/>
+        <image name="arrow" width="17" height="10"/>
+    </resources>
+</document>
