@@ -16,10 +16,10 @@ class Driver {
     let nameDriver: String
     let destinationStart: String
     let destinationEnd: String
-    var destinationDistance: String
-    var timeStart: String
-    var timeEnd: String
-    var destinationTripDuration: String
+    var destinationDistance: String = ""
+    var timeStart: String = ""
+    var timeEnd: String = ""
+    var destinationTripDuration: String = ""
     let rating: Int
     
     init(json: JSON) {
@@ -28,10 +28,6 @@ class Driver {
         destinationStart = json["pick_up"]["name"].stringValue
         destinationEnd = json["drop_off"]["name"].stringValue
         rating = json["pilot"]["rating"].intValue
-        timeStart = ""
-        timeEnd = ""
-        destinationTripDuration = ""
-        destinationDistance = ""
         timeStart = convertDateFormatter(date: json["pick_up"]["date"].stringValue)
         timeEnd = convertDateFormatter(date: json["drop_off"]["date"].stringValue)
         destinationDistance = String(getComa(number: json["distance"]["value"].intValue))   + " " + json["distance"]["unit"].stringValue
@@ -69,9 +65,6 @@ class Driver {
         dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm.ssZ"
         dateFormatter.timeZone = NSTimeZone(name: "UTC") as TimeZone!
         let date = dateFormatter.date(from: date)
-        dateFormatter.dateFormat = "yyyy MMM EEEE HH:mm"
-        dateFormatter.timeZone = NSTimeZone(name: "UTC") as TimeZone!
-        _ = dateFormatter.string(from: date!)
         let hour = String(Calendar.current.component(.hour, from: date!))
         var minute = String(Calendar.current.component(.minute, from: date!))
         if (Calendar.current.component(.minute, from: date!) <= 9){
